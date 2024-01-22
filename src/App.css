@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
+body{
+    background: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
+.App{
+    text-align: center;
+}
+.title{
+    font-size: 50px;
+    color: #010101;
+    margin-bottom: 2rem;
+}
+.form {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.todo-input{
+    background:none;
+    margin-right: 25px;
+    padding: 5px;
+    width: 500px;
+    height: 50px;
+    color: #010101;
+    border-radius:7px ;
+    text-align: center;
+    font-size: large;
+}
+.todo-input::placeholder {
+    color:#aaaaaa;
+    font-size: large;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.todo-button{
+    font-size: large;
+    align-items: center;
+    border: none;
+    width: 120px;
+    height: 50px;
+    border-radius: 5px;
+    background: #e2ebfa;
+    color: #5b75cc;
+}
+.todo-button:hover{
+    cursor: pointer;
+}
+.todo {
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    width: 800px;
+    height: 60px;
+    margin-top: 40px;
+    border: none;
+    border-radius: 20px;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.todo-text{
+    overflow: visible;
+    overflow-wrap: anywhere;
+    margin-left: 30px;
+    color: #323232;
+    font-size: 25px;
+}
+.delete{
+    margin-right: 10px;
+    margin-left: 15px;
+}
+.delete:hover{
+    cursor: pointer;
+}
+.circle{
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #075dff;
+    border-radius: 50%;
+    width: 25px;
+    height:25px;
+}
+.circle:hover{
+    cursor: pointer;
+}
+.checkmark{
+    text-align: center;
+    padding: 4.1px;
+    background-color:#075dff ;
+    border: 1px solid #075dff;
+    border-radius: 50%;
+    width: 27px;
+    height:27px;
+    color: white;
+}
+.checkmark:hover{
+    cursor: pointer;
+}
+.edit{
+    margin-left: 15px;
+}
+.edit:hover{
+    cursor: pointer;
+}
+.edit-form{
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: #ffffff;
+    width: 800px;
+    height: 60px;
+    margin-top: 40px;
+    border: none;
+    border-radius: 20px;
+    justify-content: space-between;
+}
+.edit-todo-input{
+    background:none;
+    padding: 10px;
+    width: 650px;
+    height: 50px;
+    color: #010101;
+    border-radius:7px ;
+    text-align: center;
+    font-size: 25px;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
